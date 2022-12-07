@@ -1,0 +1,38 @@
+//Author Megha Waghmare 
+import java.io.*;
+import java.util.Scanner;
+
+class Reverse {
+
+	public static void main(String[] args)
+	{
+		int num, rem;
+
+		int rev = 0, sum = 0;
+
+		System.out.println("Enter the number: 25 ");
+
+		// num = sc.nextInt();
+      num = 25;
+
+		do {
+
+			rem = num % 10;
+      rev = rev * 10 + rem;
+      // Sum of the digits of number
+			sum = sum + rem;
+
+			num = num / 10;
+		}
+
+		// Condition check
+		// Remember: By this time 1 iteration is over even
+		// if conditions false
+		while (num > 0);
+		System.out.println("Reverse of given number: "
+						+ rev);
+
+		System.out.println("Sum of digits of given number: "
+						+ sum);
+	}
+}
