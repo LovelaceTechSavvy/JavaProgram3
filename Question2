@@ -1,0 +1,21 @@
+# JavaProgram3
+# PracticalNo3
+//Megha Waghmare
+import java.util.Scanner;
+public class test {
+ 
+   public static void main(String[] args) {
+	   
+	    System.out.println(validate("the java_exercises done"));
+		System.out.println(validate("The Java_exercises done"));
+		System.out.println(validate("the java_Exercises done"));		
+		System.out.println(validate("The Java_Exercises done"));	
+        }
+
+   public static String validate(String text) {
+	   if (text.matches("^[a-z]+_[a-z]+$"))
+                return "Found a match!";
+       else
+                return "Not matched!";
+   }
+} 
